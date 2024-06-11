@@ -1,0 +1,120 @@
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  .title {
+    margin-bottom: 4rem;
+    margin-left: 1rem;
+    h1 {
+      color: #b2a4ff;
+    }
+  }
+}
+
+.indicator {
+  display: none;
+}
+
+.filter-buttons {
+  text-align: start;
+  padding: 0.5rem;
+}
+
+.filter-buttons button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-size: 0.8rem;
+  background: none;
+  border: 2px solid #b2a4ff;
+  text-transform: capitalize;
+  color: #b2a4ff;
+  font-family: inherit;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #b2a4ff;
+  color: black;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-item {
+  margin: 1.5rem 1rem;
+}
+
+.image-item img {
+  max-width: 200px;
+  aspect-ratio: 9 / 16;
+  border-radius: 10px;
+  border: 2px solid #b2a4ff;
+  height: auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+@media (max-width: 730px) {
+  .image-item img {
+    width: 170px;
+  }
+}
+
+@media (max-width: 635px) {
+  .image-item img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 570px) {
+  .App {
+    width: 95%;
+    margin: 0 auto;
+
+    .title {
+      width: 95%;
+      margin: 1rem auto 3rem;
+    }
+
+    .image-gallery {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .image-item {
+        margin: 1rem 0;
+      }
+    }
+
+    .indicator {
+      display: block;
+      text-align: right;
+      font-size: 0.6rem;
+      text-shadow: -10px 0px 10px #b2a4ff;
+      color: #b2a4ff;
+    }
+  }
+  .filter-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+    padding: 0;
+
+    button {
+      font-size: 0.7rem;
+    }
+  }
+
+  .image-item img {
+    min-width: 320px;
+  }
+}
