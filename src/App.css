@@ -152,3 +152,9 @@ button:hover {
     outline-color: #7b64fc;
   }
 }
+
+@media (max-width: 400px) {
+  .image-item img {
+    min-width: 250px;
+  }
+}
