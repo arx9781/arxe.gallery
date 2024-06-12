@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /build/
+Disallow: /coverage/
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /logs/
+
+Sitemap: /sitemap.xml
