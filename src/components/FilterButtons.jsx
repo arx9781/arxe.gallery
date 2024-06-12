@@ -10,7 +10,6 @@ const FilterButtons = ({ onFilterChange }) => {
 
   return (
     <>
-      <div className="indicator">scroll &gt; </div>
       <div className="filter-buttons">
         {categories.map((category) => (
           <button key={category} onClick={() => onFilterChange(category)}>

@@ -20,7 +20,7 @@ const images = [
     category: "abstract",
   },
   {
-    src: "./assets/futuristic/fs3.jpg",
+    src: "./assets/futuristic/fs2.jpg",
     alt: "Futuristic 3",
     category: "futuristic",
   },
@@ -52,7 +52,7 @@ const images = [
     category: "futuristic",
   },
   {
-    src: "./assets/futuristic/fs2.jpg",
+    src: "./assets/futuristic/fs3.jpg",
     alt: "Futuristic 2",
     category: "futuristic",
   },
