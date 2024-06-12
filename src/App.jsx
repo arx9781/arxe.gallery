@@ -4,6 +4,7 @@ import images from "./imageData";
 import FilterButtons from "./components/FilterButtons";
 import ImageGallery from "./components/ImageGallery";
 import Title from "./components/Title";
+import ScrollTopButton from "./components/ScrollTopButton";
 import { useState } from "react";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
         <Title />
         <FilterButtons onFilterChange={handleFilterChange} />
         <ImageGallery images={filteredImages} />
+        <ScrollTopButton />
       </div>
     </>
   );

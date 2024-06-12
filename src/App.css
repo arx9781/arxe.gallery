@@ -9,6 +9,11 @@
     h1 {
       color: #b2a4ff;
     }
+    p {
+      color: #b2a4ff;
+      font-size: 0.8rem;
+      font-style: italic;
+    }
   }
 }
 
@@ -60,6 +65,11 @@ button:hover {
   cursor: pointer;
 }
 
+.image-item img:hover {
+  outline: 5px solid #b2a4ff;
+  transform: scale(1.05);
+}
+
 @media (max-width: 730px) {
   .image-item img {
     width: 170px;
@@ -107,7 +117,7 @@ button:hover {
     align-items: center;
     justify-content: space-between;
     overflow-x: scroll;
-    padding: 0;
+    padding: 0 0.5rem;
 
     button {
       font-size: 0.7rem;
@@ -116,5 +126,29 @@ button:hover {
 
   .image-item img {
     min-width: 320px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .App .title h1,
+  p {
+    color: #7b64fc;
+  }
+
+  .filter-buttons button {
+    color: #7b64fc;
+    border-color: #7b64fc;
+  }
+
+  button:hover {
+    color: #f7f7f7;
+    background-color: #7b64fc;
+  }
+
+  .image-item img {
+    border-color: #7b64fc;
+  }
+  .image-item img:hover {
+    outline-color: #7b64fc;
   }
 }
