@@ -5,6 +5,7 @@ import FilterButtons from "./components/FilterButtons";
 import ImageGallery from "./components/ImageGallery";
 import Title from "./components/Title";
 import ScrollTopButton from "./components/ScrollTopButton";
+import Footer from "./components/Footer";
 import { useState } from "react";
 
 const App = () => {
@@ -21,12 +22,13 @@ const App = () => {
 
   return (
     <>
-      <div className="App">
+      <main className="App">
         <Title />
         <FilterButtons onFilterChange={handleFilterChange} />
         <ImageGallery images={filteredImages} />
         <ScrollTopButton />
-      </div>
+        <Footer />
+      </main>
     </>
   );
 };
